@@ -1,0 +1,20 @@
+# Cyber Security Internship Task 1 - Commands Used
+
+# 1. Update package lists and install Nmap if needed
+sudo apt update
+sudo apt install nmap -y
+
+# 2. Find local IP range
+ip a
+
+# 3. Perform TCP SYN scan on local subnet (replace with your subnet address)
+sudo nmap -sS 192.168.1.0/24
+
+# 4. Save the scan results to a text file
+sudo nmap -sS 192.168.1.0/24 -oN scan_results.txt
+
+# 5. Optionally, scan versions of services running on open ports
+sudo nmap -sV 192.168.1.0/24
+
+# 6. Optional: Launch Wireshark for network packet capture
+sudo wireshark
