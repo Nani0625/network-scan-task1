@@ -8,13 +8,13 @@ sudo apt install nmap -y
 ip a
 
 # 3. Perform TCP SYN scan on local subnet (replace with your subnet address)
-sudo nmap -sS 192.168.1.0/24
+sudo nmap -sS 10.191.209.197/24
 
 # 4. Save the scan results to a text file
-sudo nmap -sS 192.168.1.0/24 -oN scan_results.txt
+sudo nmap -sS 10.191.209.197/24 -oN scan_results.txt
 
 # 5. Optionally, scan versions of services running on open ports
-sudo nmap -sV 192.168.1.0/24
+sudo nmap -sV 10.191.209.197/24
 
 # 6. Optional: Launch Wireshark for network packet capture
 sudo wireshark
